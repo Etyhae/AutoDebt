@@ -13,6 +13,8 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/main.css">
+
+    <script src="assets/js/app.js"></script>
 </head>
 
 <body>
@@ -38,20 +40,20 @@
                 <div>
                     <div class="key-value">
                         <label for="intro-loan" class="bold text-gray text-md leading-13">Сумма займа</label>
-                        <span class="request-label leading-13">22 000 000р</span>
+                        <output class="request-label leading-13" id="intro-loan-out">22 000 000р</output>
                     </div>
-                    <input type="range" class="info-range" id="intro-loan" min="5000" max="30000000">
+                    <input type="range" class="info-range" id="intro-loan" min="5000" max="30000000" step="1000">
                     <div class="intro-range-info">
-                        <div>1000р</div>
+                        <div>5000р</div>
                         <div>30 000 000р</div>
                     </div>
                 </div>
                 <div>
                     <div class="key-value">
                         <label for="intro-loan" class="bold text-gray text-md leading-13">Срок займа</label>
-                        <span class="request-label leading-13">364 дня</span>
+                        <output class="request-label leading-13" id="intro-days-out">364 дня</output>
                     </div>
-                    <input type="range" class="info-range" id="intro-loan" min="4" max="728">
+                    <input type="range" class="info-range" id="intro-days" min="4" max="728">
                     <div class="intro-range-info">
                         <div>4 дня</div>
                         <div>728 дней</div>
