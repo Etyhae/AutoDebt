@@ -1,0 +1,329 @@
+:root {
+    --back: #232323;
+    --accent: #91BC35;
+    --white: #FFFFFF;
+    --rounded: 20px;
+    --xrounded: 40px;
+    --gray: #919191;
+}
+
+body {
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 76rem;
+    height: 5rem;
+    border-radius: var(--rounded);
+    margin: 0 auto;
+    background-color: var(--back);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 2.3rem;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+section {
+    margin: 2rem auto;
+}
+
+.intro {
+    width: 76rem;
+    height: 46rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10rem auto 2rem auto;
+    padding: 0;
+}
+
+.intro-text {
+    width: 50%;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.intro-img {
+    width: 50rem;
+    padding-left: -6rem;
+}
+
+.intro-form-wrap {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start
+}
+
+.intro-form {
+    height: 35rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--white);
+    border-radius: var(--xrounded);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.intro-range-info {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    color: var(--gray);
+    font-size: 1rem;
+    line-height: 200%;
+    position: relative;
+    text-align: center;
+    font-weight: 700;
+    row-gap: 0;
+}
+
+.info-range {
+    width: calc(100% - 2px);
+    height: 6px;
+    background-color: var(--back);
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 20px;
+}
+
+.intro-form button {
+    width: 50%;
+    padding: 1.2rem 2rem;
+    background-color: var(--accent);
+    color: var(--white);
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: center;
+    border: none;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.key-value {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-color: var(--white);
+    box-shadow: inset 0 0 0 3px var(--accent);
+    cursor: pointer;
+}
+
+.info-range-info {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    color: var(--accent);
+    font-size: 0.8rem;
+    position: relative;
+    font-weight: 500;
+    row-gap: 0;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.leading-09 {
+    line-height: 90%;
+}
+
+.leading-13 {
+    line-height: 130%;
+}
+
+.text-xl {
+    font-size: 4.4rem;
+}
+
+.text-md {
+    font-size: 1.6rem;
+}
+
+.text-lg {
+    font-size: 2rem;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.exbold {
+    font-weight: 900;
+}
+
+.text-green {
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.text-gray {
+    font-weight: 700;
+    color: var(--back);
+}
+
+.form-request {
+    width: 68rem;
+    height: 100%;
+    background-color: var(--back);
+    margin: 7rem auto 2rem auto;
+    border-radius: var(--rounded);
+    padding: 4rem;
+}
+
+.request {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+.form-request div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    position: relative;
+}
+
+.request-label {
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.request-input {
+    border-radius: 20px;
+    padding: 1.2rem 1rem;
+    font-weight: 550;
+    color: var(--back);
+    font-family: "Montserrat", sans-serif;
+    border: none;
+}
+
+.input-wrapper {
+    border-radius: 20px;
+    background-color: var(--white);
+    padding: 1.5rem;
+    position: relative;
+}
+
+.input-wrapper .request-range {
+    width: calc(100% - 2px);
+    height: 2px;
+    background-color: var(--accent);
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.input-wrapper .request-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: var(--accent);
+    cursor: pointer;
+}
+
+.input-range-info {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    color: var(--accent);
+    font-size: 0.8rem;
+    position: relative;
+    font-weight: 500;
+    row-gap: 0;
+}
+
+.white-bold {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.request-agreement {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    grid-column: span 3 / span 3;
+    column-gap: 1.4rem;
+    margin-top: 2rem;
+}
+
+.request-agree {
+    font-size: 1rem;
+    color: var(--white);
+    font-weight: 550;
+    display: flex;
+}
+
+/* Скрываем стандартный чекбокс */
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Создаем квадрат внутри чекбокса */
+input[type="checkbox"]+label::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 0.8rem;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    background-color: var(--white);
+}
+
+input[type="checkbox"]:checked+label::before {
+    transition: all 0.3s ease;
+    background-color: var(--accent);
+    box-shadow: var(--white) inset 0 0 0 4px;
+}
+
+.request button {
+    grid-column-start: 2;
+    padding: 1.2rem 2rem;
+    background-color: var(--accent);
+    color: var(--white);
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: center;
+    border: none;
+    overflow: hidden;
+}

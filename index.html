@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zaim</title>
+    <meta name="description" content="Получи сейчас - отдай потом!" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <header>
+        <a href="">О нас</a>
+        <a href="">Вопросы и ответы</a>
+        <a href="">Погасить займ</a>
+        <a href="">Отзывы</a>
+        <a href="">Контакты</a>
+    </header>
+
+    <section class="intro">
+        <div class="intro-text">
+            <div>
+                <p class="text-green exbold text-xl leading-09 m-0">Получи займ <br>под залог авто <br><span
+                        class="text-gray bold text-lg m-0">Решение всего за 15 минут!</span></p>
+            </div>
+            <img src="images/intro_car.png" class="intro-img" alt="">
+        </div>
+        <div class="intro-form-wrap">
+            <form class="intro-form" action="">
+                <legend class="text-gray bold text-lg text-center">Рассчитайте займ</legend>
+                <div>
+                    <div class="key-value">
+                        <label for="intro-loan" class="bold text-gray text-md leading-13">Сумма займа</label>
+                        <span class="request-label leading-13">22 000 000р</span>
+                    </div>
+                    <input type="range" class="info-range" id="intro-loan" min="5000" max="30000000">
+                    <div class="intro-range-info">
+                        <div>1000р</div>
+                        <div>30 000 000р</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="key-value">
+                        <label for="intro-loan" class="bold text-gray text-md leading-13">Срок займа</label>
+                        <span class="request-label leading-13">364 дня</span>
+                    </div>
+                    <input type="range" class="info-range" id="intro-loan" min="4" max="728">
+                    <div class="intro-range-info">
+                        <div>4 дня</div>
+                        <div>728 дней</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="key-value">
+                        <label for="intro-loan" class="bold text-gray text-md leading-13">Ежемесячный платеж</label>
+                        <span class="request-label leading-13">350 000р</span>
+                    </div>
+                </div>
+                <button type="submit">
+                    <span>Получить займ</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <section class=" form-request">
+        <form class="request">
+            <div>
+                <label class="request-label" for="request-name">ФИО</label>
+                <input class="request-input" id="request-name" type="text" placeholder="Фамилия Имя Отчество">
+            </div>
+            <div>
+                <label class="request-label" for="request-tel">Номер телефона</label>
+                <input class="request-input" id="request-tel" type="text" placeholder="Ваш номер">
+            </div>
+            <div>
+                <label class="request-label" for="request-region">ФИО</label>
+                <input class="request-input" id="request-region" type="text" placeholder="Ваш регион">
+            </div>
+            <div>
+                <label class="request-label" for="request-loan">Сумма займа</label>
+                <div class="input-wrapper">
+                    <div class="request-label">2 150 000р</div>
+                    <input class="request-range" id="request-loan" min="30000" max="22000000" type="range">
+                </div>
+                <div class="input-range-info">
+                    <div>от 30 000р</div>
+                    <div>до 22 000 000р</div>
+                </div>
+            </div>
+            <div>
+                <label class="request-label" for="request-time">Срок займа</label>
+                <div class="input-wrapper">
+                    <div class="request-label">12 месяцев</div>
+                    <input class="request-range" id="request-time" min="30000" max="22000000" type="range"
+                        placeholder="Фамилия Имя Отчество">
+                </div>
+                <div class="input-range-info">
+                    <div>от 1 месяца</div>
+                    <div>до 36 месяцев</div>
+                </div>
+            </div>
+            <div>
+                <p class="white-bold">ПРОЦЕНТНАЯ СТАВКА ОТ</p>
+                <p style="font-size: 6rem; color: #91BC35; font-weight: 700; margin: 0; line-height: 5rem;">
+                    2,92%</p>
+                <p class="white-bold">В МЕСЯЦ</p>
+            </div>
+
+            <div class="request-agreement">
+                <input type="checkbox" class="request-checkbox" id="request-agree">
+                <label for="request-agree" class="request-agree">Согласен(на) на обработку персональных
+                    данных</label>
+            </div>
+            <button type="submit">
+                <span>Отправить заявку</span>
+            </button>
+        </form>
+    </section>
+</body>
+
+</html>
