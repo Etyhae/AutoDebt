@@ -46,4 +46,14 @@ document.addEventListener("DOMContentLoaded", () => {
     introDays.addEventListener("input", () => {
         setDaysValue(introDaysValue, introDays)
     })
+
+    const acc_items = document.querySelectorAll(".accordion-item");
+
+    for (const item of acc_items) {
+        item.addEventListener("click", () => {
+            item.classList.toggle("acc-slideOut");
+        })
+    }
+
+
 })

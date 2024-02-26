@@ -18,138 +18,320 @@
 </head>
 
 <body>
-    <header>
-        <a href="">О нас</a>
-        <a href="">Вопросы и ответы</a>
-        <a href="">Погасить займ</a>
-        <a href="">Отзывы</a>
-        <a href="">Контакты</a>
+    <header role="banner">
+        <nav>
+            <a href="">О нас</a>
+            <a href="">Вопросы и ответы</a>
+            <a href="">Погасить займ</a>
+            <a href="">Отзывы</a>
+            <a href="">Контакты</a>
+        </nav>
     </header>
 
-    <section class="intro">
-        <div class="intro-text">
-            <div>
-                <p class="text-green exbold text-xl leading-09 m-0">Получи займ <br>под залог авто <br><span
-                        class="text-gray bold text-lg m-0">Решение всего за 15 минут!</span></p>
+    <main>
+        <section class="intro">
+            <div class="intro-text">
+                <div>
+                    <h1 class="text-green exbold text-xl leading-09 m-0">Получи займ <br>под залог авто <br><span
+                            class="text-gray bold text-lg m-0">Решение всего за 15 минут!</span></h1>
+                </div>
+                <img src="images/intro_car.png" class="intro-img" alt="">
             </div>
-            <img src="images/intro_car.png" class="intro-img" alt="">
-        </div>
-        <div class="intro-form-wrap">
-            <form class="intro-form" action="">
-                <legend class="text-gray bold text-lg text-center">Рассчитайте займ</legend>
-                <div>
-                    <div class="key-value">
-                        <label for="intro-loan" class="bold text-gray text-md leading-13">Сумма займа</label>
-                        <output class="request-label leading-13" id="intro-loan-out">22 000 000р</output>
+            <div class="intro-form-wrap">
+                <form class="intro-form" action="">
+                    <legend class="text-gray bold text-lg text-center">Рассчитайте займ</legend>
+                    <div>
+                        <div class="key-value">
+                            <label for="intro-loan" class="bold text-gray text-md leading-13">Сумма займа</label>
+                            <output class="base-label leading-13" id="intro-loan-out">22 000 000р</output>
+                        </div>
+                        <input type="range" class="info-range" name="intro-loan" id="intro-loan" value="15000000"
+                            min="5000" max="30000000" step="1000">
+                        <div class="intro-range-info">
+                            <div>5000р</div>
+                            <div>30 000 000р</div>
+                        </div>
                     </div>
-                    <input type="range" class="info-range" name="intro-loan" id="intro-loan" value="15000000" min="5000"
-                        max="30000000" step="1000">
-                    <div class="intro-range-info">
-                        <div>5000р</div>
-                        <div>30 000 000р</div>
+                    <div>
+                        <div class="key-value">
+                            <label for="intro-loan" class="bold text-gray text-md leading-13">Срок займа</label>
+                            <output class="base-label leading-13" name="intro-days-out" id="intro-days-out">364
+                                дня</output>
+                        </div>
+                        <input type="range" class="info-range" id="intro-days" min="4" max="728">
+                        <div class="intro-range-info">
+                            <div>4 дня</div>
+                            <div>728 дней</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="key-value">
+                            <label for="intro-loan" class="bold text-gray text-md leading-13">Ежемесячный платеж</label>
+                            <output id="intro-total" class="base-label leading-13">350 000р</output>
+                        </div>
+                    </div>
+                    <button type="submit">
+                        <span>Получить займ</span>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <section class="advantages">
+            <div>Автомобиль остается у вас</div>
+            <div>Одобряем более 90% обращений</div>
+            <div>С любой кредитной историей</div>
+            <div>Без справок 2-НДФЛ</div>
+            <div>Высокая оценка стоимости вашего авто</div>
+        </section>
+
+        <section class="form-request">
+            <form class="request">
+                <div>
+                    <label class="base-label" for="request-name">ФИО</label>
+                    <input class="base-input" name="request-name" id="request-name" type="text"
+                        placeholder="Фамилия Имя Отчество">
+                </div>
+                <div>
+                    <label class="base-label" for="request-tel">Номер телефона</label>
+                    <input class="base-input" name="request-tel" id="request-tel" type="tel" placeholder="Ваш номер">
+                </div>
+                <div>
+                    <label class="base-label" for="request-region">Регион</label>
+                    <input class="base-input" name="request-region" id="request-region" type="text"
+                        placeholder="Ваш регион">
+                </div>
+                <div>
+                    <label class="base-label" for="request-loan">Сумма займа</label>
+                    <div class="input-wrapper">
+                        <output class="base-label">2 150 000р</output>
+                        <input class="request-range" name="request-loan" id="request-loan" min="30000" max="22000000"
+                            type="range">
+                    </div>
+                    <div class="input-range-info">
+                        <div>от 30 000р</div>
+                        <div>до 22 000 000р</div>
                     </div>
                 </div>
                 <div>
-                    <div class="key-value">
-                        <label for="intro-loan" class="bold text-gray text-md leading-13">Срок займа</label>
-                        <output class="request-label leading-13" name="intro-days-out" id="intro-days-out">364
-                            дня</output>
+                    <label class="base-label" for="request-time">Срок займа</label>
+                    <div class="input-wrapper">
+                        <output class="base-label">12 месяцев</output>
+                        <input class="request-range" name="request-time" id="request-time" min="30000" max="22000000"
+                            type="range" placeholder="Фамилия Имя Отчество">
                     </div>
-                    <input type="range" class="info-range" id="intro-days" min="4" max="728">
-                    <div class="intro-range-info">
-                        <div>4 дня</div>
-                        <div>728 дней</div>
+                    <div class="input-range-info">
+                        <div>от 1 месяца</div>
+                        <div>до 36 месяцев</div>
                     </div>
                 </div>
                 <div>
-                    <div class="key-value">
-                        <label for="intro-loan" class="bold text-gray text-md leading-13">Ежемесячный платеж</label>
-                        <output id="intro-total" class="request-label leading-13">350 000р</output>
-                    </div>
+                    <p class="white-bold">ПРОЦЕНТНАЯ СТАВКА ОТ</p>
+                    <p style="font-size: 6rem; color: #91BC35; font-weight: 700; margin: 0; line-height: 5rem;">
+                        2,92%</p>
+                    <p class="white-bold">В МЕСЯЦ</p>
                 </div>
-                <button type="submit">
-                    <span>Получить займ</span>
+
+                <div class="form-agreement">
+                    <input type="checkbox" class="request-checkbox" name="request-agree" id="request-agree">
+                    <label for="request-agree" class="form-agree">Согласен(на) на обработку персональных
+                        данных</label>
+                </div>
+                <button type="submit" class="form-submit">
+                    <span>Отправить заявку</span>
                 </button>
             </form>
-        </div>
-    </section>
+        </section>
 
-    <section class="advantages">
-        <div>Автомобиль остается у вас</div>
-        <div>Одобряем более 90% обращений</div>
-        <div>С любой кредитной историей</div>
-        <div>Без справок 2-НДФЛ</div>
-        <div>Высокая оценка стоимости вашего авто</div>
-    </section>
+        <section class="examples">
+            <div class="example-card">
+                <img src="images/ex-1.webp" alt="Range Rover 4 - 2015">
+                <div class="card-header">
+                    <p class="card-title">Range Rover 4</p>
+                    <p class="card-subtitle">Год выпуска: 2015</p>
+                </div>
+                <div class="card-info">
+                    <p class="card-cost">1 500 000р</p>
+                    <p class="card-deposit">Выдано под залог авто</p>
+                </div>
+            </div>
+            <div class="example-card">
+                <img src="images/ex-1.webp" alt="Range Rover 4 - 2015">
+                <div class="card-header">
+                    <p class="card-title">Range Rover 4</p>
+                    <p class="card-subtitle">Год выпуска: 2015</p>
+                </div>
+                <div class="card-info">
+                    <p class="card-cost">1 500 000р</p>
+                    <p class="card-deposit">Выдано под залог авто</p>
+                </div>
+            </div>
+            <div class="example-card">
+                <img src="images/ex-1.webp" alt="Range Rover 4 - 2015">
+                <div class="card-header">
+                    <p class="card-title">Range Rover 4</p>
+                    <p class="card-subtitle">Год выпуска: 2015</p>
+                </div>
+                <div class="card-info">
+                    <p class="card-cost">1 500 000р</p>
+                    <p class="card-deposit">Выдано под залог авто</p>
+                </div>
+            </div>
+            <div class="example-card">
+                <img src="images/ex-1.webp" alt="Range Rover 4 - 2015">
+                <div class="card-header">
+                    <p class="card-title">Range Rover 4</p>
+                    <p class="card-subtitle">Год выпуска: 2015</p>
+                </div>
+                <div class="card-info">
+                    <p class="card-cost">1 500 000р</p>
+                    <p class="card-deposit">Выдано под залог авто</p>
+                </div>
+            </div>
+            <div class="example-card">
+                <img src="images/ex-1.webp" alt="Range Rover 4 - 2015">
+                <div class="card-header">
+                    <p class="card-title">Range Rover 4</p>
+                    <p class="card-subtitle">Год выпуска: 2015</p>
+                </div>
+                <div class="card-info">
+                    <p class="card-cost">1 500 000р</p>
+                    <p class="card-deposit">Выдано под залог авто</p>
+                </div>
+            </div>
+            <div class="example-card">
+                <img src="images/ex-1.webp" alt="Range Rover 4 - 2015">
+                <div class="card-header">
+                    <p class="card-title">Range Rover 4</p>
+                    <p class="card-subtitle">Год выпуска: 2015</p>
+                </div>
+                <div class="card-info">
+                    <p class="card-cost">1 500 000р</p>
+                    <p class="card-deposit">Выдано под залог авто</p>
+                </div>
+            </div>
+        </section>
 
-    <section class="form-request">
-        <form class="request">
-            <div>
-                <label class="request-label" for="request-name">ФИО</label>
-                <input class="request-input" name="request-name" id="request-name" type="text"
-                    placeholder="Фамилия Имя Отчество">
-            </div>
-            <div>
-                <label class="request-label" for="request-tel">Номер телефона</label>
-                <input class="request-input" name="request-tel" id="request-tel" type="tel" placeholder="Ваш номер">
-            </div>
-            <div>
-                <label class="request-label" for="request-region">Регион</label>
-                <input class="request-input" name="request-region" id="request-region" type="text"
-                    placeholder="Ваш регион">
-            </div>
-            <div>
-                <label class="request-label" for="request-loan">Сумма займа</label>
-                <div class="input-wrapper">
-                    <output class="request-label">2 150 000р</output>
-                    <input class="request-range" name="request-loan" id="request-loan" min="30000" max="22000000"
-                        type="range">
+        <section class="requirements">
+            <h2 class="requirements-title">Условия займов под залог <span class="text-green bold">ПТС автомобиля</span>
+            </h2>
+            <div class="requirements-container">
+                <div class="requirements-info">
+                    <div>
+                        <p>К транспорту предъявляются следующие требования</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>К заёмщику предъявляются следующие требования</p>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.</li>
+                        </ul>
+                    </div>
+                    <div class="requirements-conclusion">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor
+                        incididunt ut labore
+                        et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</div>
                 </div>
-                <div class="input-range-info">
-                    <div>от 30 000р</div>
-                    <div>до 22 000 000р</div>
-                </div>
+                <img src="images/requirements_car.png" alt="">
             </div>
-            <div>
-                <label class="request-label" for="request-time">Срок займа</label>
-                <div class="input-wrapper">
-                    <output class="request-label">12 месяцев</output>
-                    <input class="request-range" name="request-time" id="request-time" min="30000" max="22000000"
-                        type="range" placeholder="Фамилия Имя Отчество">
-                </div>
-                <div class="input-range-info">
-                    <div>от 1 месяца</div>
-                    <div>до 36 месяцев</div>
-                </div>
-            </div>
-            <div>
-                <p class="white-bold">ПРОЦЕНТНАЯ СТАВКА ОТ</p>
-                <p style="font-size: 6rem; color: #91BC35; font-weight: 700; margin: 0; line-height: 5rem;">
-                    2,92%</p>
-                <p class="white-bold">В МЕСЯЦ</p>
-            </div>
+        </section>
 
-            <div class="request-agreement">
-                <input type="checkbox" class="request-checkbox" name="request-agree" id="request-agree">
-                <label for="request-agree" class="request-agree">Согласен(на) на обработку персональных
-                    данных</label>
+        <section class="transport">
+            <h2 class="transport-title">Принимаем к рассмотрению <span class="text-green bold">все виды
+                    транспорта</span>
+            </h2>
+            <div class="transport-kinds">
+                <div class="transport-card">
+                    <img src="images/kind-a.png" alt="Категория А">
+                    <p>Категория <span class="text-green">А</span></p>
+                </div>
+                <div class="transport-card">
+                    <img src="images/kind-b.png" alt="Категория В">
+                    <p>Категория <span class="text-green">В</span></p>
+                </div>
+                <div class="transport-card">
+                    <img src="images/kind-c.png" alt="Категория С">
+                    <p>Категория <span class="text-green">С</span></p>
+                </div>
+                <div class="transport-card">
+                    <img src="images/kind-spec.png" alt="Специальный транспорт">
+                    <p>Спецтехника</p>
+                </div>
             </div>
-            <button type="submit">
-                <span>Отправить заявку</span>
-            </button>
+        </section>
+
+        <form class="lead-form">
+            <legend>Моментальное<br>онлайн решение!</legend>
+            <div class="lead-wrapper">
+                <div>
+                    <label for="lead-name" class="base-label">ФИО</label>
+                    <input type="text" class="base-input" name="lead-name" id="lead-name"
+                        placeholder="Фамилия Имя Отчество">
+                </div>
+                <div>
+                    <label for="lead-name" class="base-label">Номер телефона</label>
+                    <input type="text" class="base-input" name="lead-name" id="lead-name" placeholder="Ваш номер">
+                </div>
+                <div>
+                    <label for="lead-name" class="base-label">Регион проживания</label>
+                    <input type="text" class="base-input" name="lead-name" id="lead-name" placeholder="Ваш регион">
+                </div>
+                <div class="form-agreement">
+                    <input type="checkbox" name="lead-agree" id="lead-agree">
+                    <label for="lead-agree" class="form-agree">Согласен(на) на обработку персональных
+                        данных</label>
+                </div>
+                <button type="submit" class="form-submit">
+                    <span>Отправить заявку</span>
+                </button>
+            </div>
         </form>
-    </section>
 
-    <section class="examples">
-        <div class="example-card">
-            <img src="" alt="">
-            <div class="card-title">Range Rover 4
-                <p class="card">Год выпуска: 2015</p>
+        <section class="faq">
+            <h2 class="faq-title">Часто задаваемые<span class="text-green bold">
+                    вопросы</span>
+            </h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-title">Забирают ли у меня машину на время выплаты?</div>
+                    <div class="accordion-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-title">Забирают ли у меня машину на время выплаты?</div>
+                    <div class="accordion-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-title">Забирают ли у меня машину на время выплаты?</div>
+                    <div class="accordion-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
             </div>
-            <div class="card-info"></div>
-        </div>
-    </section>
-
+        </section>
+    </main>
 </body>
 
 </html>
