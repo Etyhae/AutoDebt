@@ -5,6 +5,7 @@
     --rounded: 20px;
     --xrounded: 40px;
     --gray: #919191;
+    --gray-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -20,15 +21,27 @@ header {
     border-radius: var(--rounded);
     margin: 0 auto;
     background-color: var(--back);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0 2.3rem;
     position: fixed;
     top: 0;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     z-index: 99;
 }
@@ -48,9 +61,17 @@ section {
 .intro {
     width: 76rem;
     height: 46rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     margin: 10rem auto 2rem auto;
     padding: 0;
@@ -70,25 +91,43 @@ section {
 .intro-form-wrap {
     width: 50%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start
 }
 
 .intro-form {
     height: 35rem;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     background-color: var(--white);
     border-radius: var(--xrounded);
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: var(--gray-shadow);
+    box-shadow: var(--gray-shadow);
     padding: 2rem;
 }
 
 .intro-range-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: row !important;
     flex-direction: row !important;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     color: var(--gray);
     font-size: 1rem;
@@ -104,6 +143,7 @@ section {
     height: 6px;
     background-color: var(--back);
     -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
     border-radius: 20px;
 }
@@ -124,8 +164,15 @@ section {
 
 .key-value {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -136,13 +183,21 @@ section {
     width: 24px;
     border-radius: 50%;
     background-color: var(--white);
+    -webkit-box-shadow: inset 0 0 0 3px var(--accent);
     box-shadow: inset 0 0 0 3px var(--accent);
     cursor: pointer;
 }
 
 .info-range-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: row !important;
     flex-direction: row !important;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     color: var(--accent);
     font-size: 0.8rem;
@@ -207,13 +262,20 @@ section {
 }
 
 .request {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: minmax(0, 1fr) 2rem minmax(0, 1fr) 2rem minmax(0, 1fr);
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 2rem;
 }
 
 .form-request div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     row-gap: 0.5rem;
     position: relative;
@@ -246,6 +308,7 @@ section {
     height: 2px;
     background-color: var(--accent);
     -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
 }
 
@@ -260,8 +323,15 @@ section {
 }
 
 .input-range-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: row !important;
     flex-direction: row !important;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     color: var(--accent);
     font-size: 0.8rem;
@@ -278,10 +348,20 @@ section {
 }
 
 .request-agreement {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: row !important;
     flex-direction: row !important;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-grid-column-span: 3;
     grid-column: span 3 / span 3;
+    -webkit-column-gap: 1.4rem;
+    -moz-column-gap: 1.4rem;
     column-gap: 1.4rem;
     margin-top: 2rem;
 }
@@ -290,6 +370,8 @@ section {
     font-size: 1rem;
     color: var(--white);
     font-weight: 550;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -305,18 +387,24 @@ input[type="checkbox"]+label::before {
     width: 20px;
     height: 20px;
     margin-right: 0.8rem;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     border-radius: 5px;
     background-color: var(--white);
 }
 
 input[type="checkbox"]:checked+label::before {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     background-color: var(--accent);
+    -webkit-box-shadow: var(--white) inset 0 0 0 4px;
     box-shadow: var(--white) inset 0 0 0 4px;
 }
 
 .request button {
+    -ms-grid-column: 2;
     grid-column-start: 2;
     padding: 1.2rem 2rem;
     background-color: var(--accent);
@@ -327,4 +415,47 @@ input[type="checkbox"]:checked+label::before {
     text-align: center;
     border: none;
     overflow: hidden;
+}
+
+.advantages {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2rem 2rem;
+    justify-items: center;
+    margin: 2rem auto;
+    height: 100%;
+    width: 76rem;
+
+}
+
+.advantages div {
+    width: 100%;
+    height: 13rem;
+    box-sizing: border-box;
+    box-shadow: var(--gray-shadow);
+    border-radius: var(--rounded);
+    position: relative;
+    color: var(--back);
+    font-weight: 700;
+    padding: 2rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.advantages div::before {
+    position: absolute;
+    display: block;
+    content: url(../../images/icons/check-round.svg);
+    top: 0;
+    left: 0;
+    transform: translate(50%, -45%);
+
+}
+
+.advantages div:last-child {
+    width: 100%;
+    grid-column: span 4 / span 4;
 }

@@ -42,7 +42,8 @@
                         <label for="intro-loan" class="bold text-gray text-md leading-13">Сумма займа</label>
                         <output class="request-label leading-13" id="intro-loan-out">22 000 000р</output>
                     </div>
-                    <input type="range" class="info-range" id="intro-loan" min="5000" max="30000000" step="1000">
+                    <input type="range" class="info-range" name="intro-loan" id="intro-loan" value="15000000" min="5000"
+                        max="30000000" step="1000">
                     <div class="intro-range-info">
                         <div>5000р</div>
                         <div>30 000 000р</div>
@@ -51,7 +52,8 @@
                 <div>
                     <div class="key-value">
                         <label for="intro-loan" class="bold text-gray text-md leading-13">Срок займа</label>
-                        <output class="request-label leading-13" id="intro-days-out">364 дня</output>
+                        <output class="request-label leading-13" name="intro-days-out" id="intro-days-out">364
+                            дня</output>
                     </div>
                     <input type="range" class="info-range" id="intro-days" min="4" max="728">
                     <div class="intro-range-info">
@@ -62,7 +64,7 @@
                 <div>
                     <div class="key-value">
                         <label for="intro-loan" class="bold text-gray text-md leading-13">Ежемесячный платеж</label>
-                        <span class="request-label leading-13">350 000р</span>
+                        <output id="intro-total" class="request-label leading-13">350 000р</output>
                     </div>
                 </div>
                 <button type="submit">
@@ -72,25 +74,36 @@
         </div>
     </section>
 
-    <section class=" form-request">
+    <section class="advantages">
+        <div>Автомобиль остается у вас</div>
+        <div>Одобряем более 90% обращений</div>
+        <div>С любой кредитной историей</div>
+        <div>Без справок 2-НДФЛ</div>
+        <div>Высокая оценка стоимости вашего авто</div>
+    </section>
+
+    <section class="form-request">
         <form class="request">
             <div>
                 <label class="request-label" for="request-name">ФИО</label>
-                <input class="request-input" id="request-name" type="text" placeholder="Фамилия Имя Отчество">
+                <input class="request-input" name="request-name" id="request-name" type="text"
+                    placeholder="Фамилия Имя Отчество">
             </div>
             <div>
                 <label class="request-label" for="request-tel">Номер телефона</label>
-                <input class="request-input" id="request-tel" type="text" placeholder="Ваш номер">
+                <input class="request-input" name="request-tel" id="request-tel" type="tel" placeholder="Ваш номер">
             </div>
             <div>
-                <label class="request-label" for="request-region">ФИО</label>
-                <input class="request-input" id="request-region" type="text" placeholder="Ваш регион">
+                <label class="request-label" for="request-region">Регион</label>
+                <input class="request-input" name="request-region" id="request-region" type="text"
+                    placeholder="Ваш регион">
             </div>
             <div>
                 <label class="request-label" for="request-loan">Сумма займа</label>
                 <div class="input-wrapper">
-                    <div class="request-label">2 150 000р</div>
-                    <input class="request-range" id="request-loan" min="30000" max="22000000" type="range">
+                    <output class="request-label">2 150 000р</output>
+                    <input class="request-range" name="request-loan" id="request-loan" min="30000" max="22000000"
+                        type="range">
                 </div>
                 <div class="input-range-info">
                     <div>от 30 000р</div>
@@ -100,9 +113,9 @@
             <div>
                 <label class="request-label" for="request-time">Срок займа</label>
                 <div class="input-wrapper">
-                    <div class="request-label">12 месяцев</div>
-                    <input class="request-range" id="request-time" min="30000" max="22000000" type="range"
-                        placeholder="Фамилия Имя Отчество">
+                    <output class="request-label">12 месяцев</output>
+                    <input class="request-range" name="request-time" id="request-time" min="30000" max="22000000"
+                        type="range" placeholder="Фамилия Имя Отчество">
                 </div>
                 <div class="input-range-info">
                     <div>от 1 месяца</div>
@@ -117,7 +130,7 @@
             </div>
 
             <div class="request-agreement">
-                <input type="checkbox" class="request-checkbox" id="request-agree">
+                <input type="checkbox" class="request-checkbox" name="request-agree" id="request-agree">
                 <label for="request-agree" class="request-agree">Согласен(на) на обработку персональных
                     данных</label>
             </div>
@@ -126,6 +139,17 @@
             </button>
         </form>
     </section>
+
+    <section class="examples">
+        <div class="example-card">
+            <img src="" alt="">
+            <div class="card-title">Range Rover 4
+                <p class="card">Год выпуска: 2015</p>
+            </div>
+            <div class="card-info"></div>
+        </div>
+    </section>
+
 </body>
 
 </html>
