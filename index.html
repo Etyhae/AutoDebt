@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
 
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/scroll.js"></script>
 </head>
 
 <body>
@@ -35,14 +36,15 @@
                     <h1 class="text-green exbold text-xl leading-09 m-0">Получи займ <br>под залог авто <br><span
                             class="text-gray bold text-lg m-0">Решение всего за 15 минут!</span></h1>
                 </div>
-                <img src="images/intro_car.png" class="intro-img" alt="">
+                <img src="images/intro_car.webp" class="intro-img" alt="">
             </div>
             <div class="intro-form-wrap">
                 <form class="intro-form" action="">
                     <legend class="text-gray bold text-lg text-center">Рассчитайте займ</legend>
                     <div>
                         <div class="key-value">
-                            <label for="intro-loan" class="bold text-gray text-md leading-13">Сумма займа</label>
+                            <label for="intro-loan" onchange="" class="bold text-gray text-md leading-13">Сумма
+                                займа</label>
                             <output class="base-label leading-13" id="intro-loan-out">22 000 000р</output>
                         </div>
                         <input type="range" class="info-range" name="intro-loan" id="intro-loan" value="15000000"
@@ -55,7 +57,7 @@
                     <div>
                         <div class="key-value">
                             <label for="intro-loan" class="bold text-gray text-md leading-13">Срок займа</label>
-                            <output class="base-label leading-13" name="intro-days-out" id="intro-days-out">364
+                            <output class="base-label leading-13" for="intro-days" id="intro-days-out">364
                                 дня</output>
                         </div>
                         <input type="range" class="info-range" id="intro-days" min="4" max="728">
@@ -245,7 +247,7 @@
                         et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua.</div>
                 </div>
-                <img src="images/requirements_car.png" alt="">
+                <img src="images/requirements_car.webp" alt="">
             </div>
         </section>
 
@@ -255,19 +257,19 @@
             </h2>
             <div class="transport-kinds">
                 <div class="transport-card">
-                    <img src="images/kind-a.png" alt="Категория А">
+                    <img src="images/kind-a.webp" alt="Категория А">
                     <p>Категория <span class="text-green">А</span></p>
                 </div>
                 <div class="transport-card">
-                    <img src="images/kind-b.png" alt="Категория В">
+                    <img src="images/kind-b.webp" alt="Категория В">
                     <p>Категория <span class="text-green">В</span></p>
                 </div>
                 <div class="transport-card">
-                    <img src="images/kind-c.png" alt="Категория С">
+                    <img src="images/kind-c.webp" alt="Категория С">
                     <p>Категория <span class="text-green">С</span></p>
                 </div>
                 <div class="transport-card">
-                    <img src="images/kind-spec.png" alt="Специальный транспорт">
+                    <img src="images/kind-spec.webp" alt="Специальный транспорт">
                     <p>Спецтехника</p>
                 </div>
             </div>
