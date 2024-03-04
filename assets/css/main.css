@@ -13,7 +13,9 @@ body {
     font-family: "Montserrat", sans-serif;
     padding: 0;
     margin: 0;
+    min-height: 100dvh;
 }
+
 
 header {
     width: 76rem;
@@ -21,22 +23,11 @@ header {
     border-radius: var(--rounded);
     margin: 1rem auto 0 auto;
     background-color: var(--back);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-box-sizing: border-box;
+    display: flex;
     padding: 0 2.3rem;
     position: fixed;
     top: 0;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     z-index: 99;
 }
@@ -44,20 +35,10 @@ header {
 header nav {
     width: 100%;
     height: 5rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -67,6 +48,10 @@ header a {
     font-weight: 700;
     font-size: 1.2rem;
     text-align: center;
+}
+
+.burger-button {
+    display: none;
 }
 
 section {
@@ -98,6 +83,21 @@ section {
     font-family: "Montserrat", sans-serif;
 }
 
+.intro-header {
+    color: var(--accent);
+    font-weight: 900;
+    font-size: 4.4rem;
+    line-height: 90%;
+    margin: 0;
+}
+
+.intro-subheader {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--back);
+    margin: 0;
+}
+
 .intro-img {
     width: 50rem;
     padding-left: -6rem;
@@ -112,6 +112,10 @@ section {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start
+}
+
+.text-accent {
+    color: var(--accent);
 }
 
 .intro-form {
@@ -131,6 +135,20 @@ section {
     -webkit-box-shadow: var(--gray-shadow);
     box-shadow: var(--gray-shadow);
     padding: 2rem;
+}
+
+.intro-loan-label {
+    font-weight: 700;
+    color: var(--back);
+    font-size: 1.6rem;
+    line-height: 130%;
+}
+
+.intro-form-legend {
+    font-weight: 700;
+    color: var(--back);
+    font-size: 2.4rem;
+    text-align: center;
 }
 
 .intro-range-info {
@@ -221,6 +239,10 @@ section {
     row-gap: 0;
 }
 
+.border-none {
+    border: none;
+}
+
 .m-0 {
     margin: 0;
 }
@@ -258,7 +280,6 @@ section {
 }
 
 .text-green {
-    font-weight: 700;
     color: var(--accent);
 }
 
@@ -642,6 +663,10 @@ input[type="checkbox"]:checked+label::before {
     width: 100%;
 }
 
+.transport-card img {
+    border-radius: 15px;
+}
+
 .transport-card p {
     font-weight: 700;
     font-size: 1.6rem;
@@ -791,4 +816,73 @@ input[type="checkbox"]:checked+label::before {
 ::-webkit-scrollbar-track {
     background-color: #eee;
     /* Цвет фона полосы прокрутки */
+}
+
+@media (max-width:640px) {
+    main {
+        box-sizing: border-box;
+        max-width: 100vw;
+        overflow: hidden;
+        padding: 0 1.5rem;
+    }
+
+    .intro {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .intro-text {
+        width: 100%;
+    }
+
+    .intro-header {
+        font-size: 2.7rem;
+    }
+
+    .intro-subheader {
+        font-size: 1.4rem;
+        padding-top: 1.5rem;
+    }
+
+    .intro-form-wrap {
+        width: 100%;
+        margin-top: -10rem;
+    }
+
+    .intro-form {
+        padding: 1rem;
+        border-radius: var(--rounded);
+    }
+
+    .intro-form-legend {
+        font-size: 1.8rem;
+    }
+
+    .intro-loan-label {
+        font-size: 1.2rem;
+    }
+
+    .base-label {
+        font-size: 1.2rem;
+        text-align: right;
+    }
+
+    .intro-form button {
+        width: 80%;
+        font-size: 1.4rem;
+        padding: 1rem 2rem;
+    }
+
+    .mw-50 {
+        width: 50%;
+    }
+
+    .advantages {
+        width: 100%;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .advantages div:last-child {
+        grid-column: span 1 / span 1;
+    }
 }

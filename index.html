@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+        rel="preload" as="font">
 
     <link rel="stylesheet" href="assets/css/main.css">
 
@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <header role="banner">
+    <header>
         <nav>
             <a href="">О нас</a>
             <a href="">Вопросы и ответы</a>
@@ -33,17 +33,19 @@
         <section class="intro">
             <div class="intro-text">
                 <div>
-                    <h1 class="text-green exbold text-xl leading-09 m-0">Получи займ <br>под залог авто <br><span
-                            class="text-gray bold text-lg m-0">Решение всего за 15 минут!</span></h1>
+                    <h1 class="intro-header">Получи займ <br>под залог авто
+                        <br>
+                    </h1>
+                    <p class="intro-subheader">Решение всего за 15 минут!</p>
                 </div>
-                <img src="images/intro_car.webp" class="intro-img" alt="">
+                <img src="images/intro_car.webp" class="intro-img" alt="Деньги за ПТС">
             </div>
             <div class="intro-form-wrap">
-                <form class="intro-form" action="">
-                    <legend class="text-gray bold text-lg text-center">Рассчитайте займ</legend>
+                <form class="intro-form" action="#" method="get">
+                    <legend class="intro-form-legend">Рассчитайте займ</legend>
                     <div>
                         <div class="key-value">
-                            <label for="intro-loan" onchange="" class="bold text-gray text-md leading-13">Сумма
+                            <label for="intro-loan" onchange="" class="intro-loan-label">Сумма
                                 займа</label>
                             <output class="base-label leading-13" id="intro-loan-out">22 000 000р</output>
                         </div>
@@ -56,7 +58,7 @@
                     </div>
                     <div>
                         <div class="key-value">
-                            <label for="intro-loan" class="bold text-gray text-md leading-13">Срок займа</label>
+                            <label for="intro-days" class="intro-loan-label">Срок займа</label>
                             <output class="base-label leading-13" for="intro-days" id="intro-days-out">364
                                 дня</output>
                         </div>
@@ -68,8 +70,9 @@
                     </div>
                     <div>
                         <div class="key-value">
-                            <label for="intro-loan" class="bold text-gray text-md leading-13">Ежемесячный платеж</label>
-                            <output id="intro-total" class="base-label leading-13">350 000р</output>
+                            <label for="intro-loan" class="intro-loan-label mw-50">Ежемесячный
+                                платеж</label>
+                            <output id="intro-total" class="base-label leading-13 mw-50">350 000р</output>
                         </div>
                     </div>
                     <button type="submit">
@@ -120,7 +123,7 @@
                     <div class="input-wrapper">
                         <output class="base-label">12 месяцев</output>
                         <input class="request-range" name="request-time" id="request-time" min="30000" max="22000000"
-                            type="range" placeholder="Фамилия Имя Отчество">
+                            type="range">
                     </div>
                     <div class="input-range-info">
                         <div>от 1 месяца</div>
@@ -129,7 +132,7 @@
                 </div>
                 <div>
                     <p class="white-bold">ПРОЦЕНТНАЯ СТАВКА ОТ</p>
-                    <p style="font-size: 6rem; color: #91BC35; font-weight: 700; margin: 0; line-height: 5rem;">
+                    <p class="text-accent" style="font-size: 6rem; font-weight: 700; margin: 0; line-height: 5rem;">
                         2,92%</p>
                     <p class="white-bold">В МЕСЯЦ</p>
                 </div>
@@ -284,12 +287,12 @@
                         placeholder="Фамилия Имя Отчество">
                 </div>
                 <div>
-                    <label for="lead-name" class="base-label">Номер телефона</label>
-                    <input type="text" class="base-input" name="lead-name" id="lead-name" placeholder="Ваш номер">
+                    <label for="lead-tel" class="base-label">Номер телефона</label>
+                    <input type="text" class="base-input" name="lead-tel" id="lead-tel" placeholder="Ваш номер">
                 </div>
                 <div>
-                    <label for="lead-name" class="base-label">Регион проживания</label>
-                    <input type="text" class="base-input" name="lead-name" id="lead-name" placeholder="Ваш регион">
+                    <label for="lead-region" class="base-label">Регион проживания</label>
+                    <input type="text" class="base-input" name="lead-region" id="lead-region" placeholder="Ваш регион">
                 </div>
                 <div class="form-agreement">
                     <input type="checkbox" name="lead-agree" id="lead-agree">
