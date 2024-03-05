@@ -56,11 +56,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    const menuButton = document.querySelector(".burger-button");
-    const menuWrapper = document.querySelector("header nav");
+    const menuButtons = document.querySelectorAll(".burger-button");
+    const documentBody = document.querySelector("body");
 
-    menuButton.addEventListener("click", () => {
-        menuWrapper.classList.toggle("active");
-    })
+    for (const btn of menuButtons) {
+        btn.addEventListener("click", () => {
+            documentBody.classList.toggle("menu-active");
+        })
+
+    }
 
 })
