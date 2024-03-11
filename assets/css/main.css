@@ -856,6 +856,20 @@ footer {
     padding: 2rem;
 }
 
+.footer-wrap hr {
+    width: 100%;
+    background-color: var(--gray);
+    height: 1px;
+    grid-column: span 3 / span 3;
+}
+
+.footer-wrap p:last-child {
+    grid-column: span 3 / span 3;
+    font-size: 1rem;
+    color: var(--gray);
+    font-weight: 500;
+}
+
 .footer-contacts {
     display: flex;
     flex-direction: column;
@@ -886,6 +900,25 @@ footer {
     text-align: center;
     padding-left: 8rem;
     gap: 1rem;
+}
+
+.footer-links {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0;
+}
+
+.footer-links-3 {
+    padding-left: 8rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--white);
+    padding: 0.8rem 0;
 }
 
 .subtext {
