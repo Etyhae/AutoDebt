@@ -616,15 +616,12 @@ input[type="checkbox"]:checked+label::before {
     width: 90%;
 }
 
-.requirements-info div ol li {
-    font-weight: 600;
-    font-size: 1.2rem;
-    margin-bottom: 0.8rem;
-    width: 90%;
+.check {
+    list-style: url(/images/icons/checks_fill.svg);
 }
 
-ul li ul {
-    list-style-type: "- ";
+.checkdouble {
+    list-style: url(/images/icons/checksdouble_fill.svg);
 }
 
 ul li ul li {
