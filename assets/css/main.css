@@ -392,6 +392,7 @@ section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: 0 auto;
 }
 
 /* Скрываем стандартный чекбокс */
@@ -584,10 +585,8 @@ input[type="checkbox"]:checked+label::before {
 .requirements-container img {
     position: absolute;
     right: 0;
-    -webkit-transform: translateY(-20%);
-    -ms-transform: translateY(-20%);
-    transform: translateY(-20%);
     z-index: -1;
+    width: 40%;
 }
 
 .requirements-info {
@@ -615,6 +614,21 @@ input[type="checkbox"]:checked+label::before {
     font-size: 1.2rem;
     margin-bottom: 0.8rem;
     width: 90%;
+}
+
+.requirements-info div ol li {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    width: 90%;
+}
+
+ul li ul {
+    list-style-type: "- ";
+}
+
+ul li ul li {
+    margin-top: 0.5rem;
 }
 
 .requirements-info div ul {
@@ -757,6 +771,7 @@ input[type="checkbox"]:checked+label::before {
     display: none;
     padding: 1rem 2rem;
     overflow: hidden;
+    flex-direction: column;
 }
 
 .accordion-title {
@@ -831,7 +846,7 @@ input[type="checkbox"]:checked+label::before {
         z-index: 100;
         transform: translateX(100%);
         transition: transform 300ms ease-in;
-        padding-bottom: 5rem;
+        padding-bottom: 5dvh;
     }
 
     .mobile-header .burger-button {
@@ -848,7 +863,7 @@ input[type="checkbox"]:checked+label::before {
         position: absolute;
         background-color: var(--back);
         width: 100vw;
-        height: 100vh;
+        height: 100dvh;
         opacity: 0.8;
         top: 0;
         left: 0;
@@ -864,13 +879,16 @@ input[type="checkbox"]:checked+label::before {
         align-items: center;
     }
 
+    header nav .burger-button img {
+        width: 2rem;
+    }
+
     header a {
         color: var(--back);
     }
 
     body.menu-active nav {
         transform: translateX(0);
-
     }
 
     header {
