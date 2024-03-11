@@ -617,11 +617,11 @@ input[type="checkbox"]:checked+label::before {
 }
 
 .check {
-    list-style: url(/images/icons/checks_fill.svg);
+    list-style: url(../../images/icons/checks_fill.svg);
 }
 
 .checkdouble {
-    list-style: url(/images/icons/checksdouble_fill.svg);
+    list-style: url(../../images/icons/checksdouble_fill.svg);
 }
 
 ul li ul li {
@@ -803,6 +803,95 @@ ul li ul li {
 .accordion-item.acc-slideOut .accordion-title {
     -webkit-box-shadow: var(--gray-shadow);
     box-shadow: var(--gray-shadow);
+}
+
+.contacts {
+    width: var(--block-width);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-about {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    width: 100%;
+    height: 25rem;
+    margin: 2rem 0;
+}
+
+.contacts-info {
+    width: 40%;
+    height: 100%;
+    box-shadow: var(--gray-shadow);
+    border-radius: var(--rounded);
+    padding: 0 2rem;
+    font-size: 1.5rem;
+}
+
+.contacts-title {
+    font-size: 2rem;
+}
+
+.contacts-map {
+    width: 60%;
+    height: 100%;
+    border-radius: var(--rounded);
+}
+
+footer {
+    background-color: var(--back);
+    height: 100%;
+    width: 100%;
+    margin-top: 6.5rem;
+    color: var(--white);
+}
+
+.footer-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: var(--block-width);
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.footer-contacts a {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    color: var(--accent);
+}
+
+.footer-address {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+.footer-buttons {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    padding-left: 8rem;
+    gap: 1rem;
+}
+
+.subtext {
+    color: var(--gray);
+    font-size: 1rem;
+    margin-top: 0;
 }
 
 /* Стилизация полосы прокрутки */
